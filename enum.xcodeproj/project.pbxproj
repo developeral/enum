@@ -15,6 +15,10 @@
 		7080DAC01CABDAE900D67846 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7080DABE1CABDAE900D67846 /* LaunchScreen.storyboard */; };
 		7080DACB1CABDAEA00D67846 /* enumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080DACA1CABDAEA00D67846 /* enumTests.m */; };
 		7080DAD61CABDAEA00D67846 /* enumUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080DAD51CABDAEA00D67846 /* enumUITests.m */; };
+		7080DAE51CABDE5600D67846 /* AController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080DAE41CABDE5600D67846 /* AController.m */; };
+		70C6AF1A1CABE327008AE97E /* AController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70C6AF191CABE327008AE97E /* AController.xib */; };
+		70C6AF271CABE4CD008AE97E /* ResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C6AF251CABE4CD008AE97E /* ResultController.m */; };
+		70C6AF281CABE4CD008AE97E /* ResultController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70C6AF261CABE4CD008AE97E /* ResultController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,12 @@
 		7080DAD11CABDAEA00D67846 /* enumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = enumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7080DAD51CABDAEA00D67846 /* enumUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = enumUITests.m; sourceTree = "<group>"; };
 		7080DAD71CABDAEA00D67846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7080DAE31CABDE5600D67846 /* AController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AController.h; sourceTree = "<group>"; };
+		7080DAE41CABDE5600D67846 /* AController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AController.m; sourceTree = "<group>"; };
+		70C6AF191CABE327008AE97E /* AController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AController.xib; sourceTree = "<group>"; };
+		70C6AF241CABE4CD008AE97E /* ResultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultController.h; sourceTree = "<group>"; };
+		70C6AF251CABE4CD008AE97E /* ResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultController.m; sourceTree = "<group>"; };
+		70C6AF261CABE4CD008AE97E /* ResultController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +115,12 @@
 				7080DAB41CABDAE900D67846 /* AppDelegate.m */,
 				7080DAB61CABDAE900D67846 /* ViewController.h */,
 				7080DAB71CABDAE900D67846 /* ViewController.m */,
+				7080DAE31CABDE5600D67846 /* AController.h */,
+				7080DAE41CABDE5600D67846 /* AController.m */,
+				70C6AF191CABE327008AE97E /* AController.xib */,
+				70C6AF241CABE4CD008AE97E /* ResultController.h */,
+				70C6AF251CABE4CD008AE97E /* ResultController.m */,
+				70C6AF261CABE4CD008AE97E /* ResultController.xib */,
 				7080DAB91CABDAE900D67846 /* Main.storyboard */,
 				7080DABC1CABDAE900D67846 /* Assets.xcassets */,
 				7080DABE1CABDAE900D67846 /* LaunchScreen.storyboard */,
@@ -243,7 +259,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70C6AF281CABE4CD008AE97E /* ResultController.xib in Resources */,
 				7080DAC01CABDAE900D67846 /* LaunchScreen.storyboard in Resources */,
+				70C6AF1A1CABE327008AE97E /* AController.xib in Resources */,
 				7080DABD1CABDAE900D67846 /* Assets.xcassets in Resources */,
 				7080DABB1CABDAE900D67846 /* Main.storyboard in Resources */,
 			);
@@ -271,8 +289,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7080DAB81CABDAE900D67846 /* ViewController.m in Sources */,
+				7080DAE51CABDE5600D67846 /* AController.m in Sources */,
 				7080DAB51CABDAE900D67846 /* AppDelegate.m in Sources */,
 				7080DAB21CABDAE900D67846 /* main.m in Sources */,
+				70C6AF271CABE4CD008AE97E /* ResultController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = enum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Ali.enum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = enum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Ali.enum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +518,7 @@
 				7080DADC1CABDAEA00D67846 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7080DADD1CABDAEA00D67846 /* Build configuration list for PBXNativeTarget "enumTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +527,7 @@
 				7080DADF1CABDAEA00D67846 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7080DAE01CABDAEA00D67846 /* Build configuration list for PBXNativeTarget "enumUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +536,7 @@
 				7080DAE21CABDAEA00D67846 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
